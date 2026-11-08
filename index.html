@@ -7,8 +7,11 @@
   <title> Renta para eventos</title>
 
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
   <!-- Estilos propios + bootstrap -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -18,26 +21,123 @@
   <!-- =========================================================
        NAVBAR · Responsable: Yosimar
        ========================================================= -->
-  <nav>
-    <!-- Aquí va la barra de navegación -->
+  <nav class="navbar sm:navbar-expand bg-1 fg-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio">Nombre del negocio</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+        <div class="drawer-header">
+          <h5 class="drawer-title" id="navbarNavLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#paquetes">Paquetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ventajas">Ventajas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
   </nav>
-
 
   <!-- =========================================================
        INICIO · Responsable: Yosimar 
        ========================================================= -->
-  <header id="inicio" class="hero">
-    <!-- Aquí va la sección de inicio -->
+  <header id="inicio" class="hero d-flex align-items-center">
+    <div class="container-fluid" id="container-info">
+      <span id="ubi-info">
+        <i class="bi bi-geo-alt-fill me-1"></i>
+        Guápiles · Pococí · Limón
+      </span>
+      <span class="h1 pt-5">
+        Todo para su evento,
+        con un solo proveedor
+      </span>
+      <span class="h5 pt-5 pb-5">
+        Mobiliario, sonido, luces, decoración y transporte en un mismo lugar. Usted celebra; nosotros llevamos, montamos
+        y recogemos todo.
+
+      </span>
+      <div class="buttons pt-5">
+        <a href="https://wa.me/50688888888" target="_blank" class="btn-outline theme-success">
+          Contactar por WhatsApp
+        </a>
+        <a href="#paquetes" class="btn-outline theme-accent">
+          Ver paquetes
+        </a>
+      </div>
+    </div>
   </header>
+
 
 
   <main>
 
     <!-- =========================================================
-         SERVICIOS · Responsable: Yosimar 
+         SERVICIOS · Responsable: Yosimar
          ========================================================= -->
-    <section id="servicios" class="py-5">
-      <!-- Aquí van las tarjetas de servicios -->
+    <section id="service" class="py-12 text-center">
+      <span class="text-uppercase title-section">Servicios</span>
+
+      <h2 class="fs-4xl fw-bold mb-0">Lo que ofrecemos</h2>
+
+      <p id="service-texto" class="fs-lg fg-3 mb-0">
+        Todo lo necesario para que su evento salga bien, sin coordinar con varios proveedores.
+      </p>
+
+      <div class="container" id="container-service">
+        <div class="card">
+          <div class="card-body">
+            <i class="bi bi-table service-icon"></i>
+            <h4 class="card-title">Mobiliario</h4>
+            <p class="card-text fg-3">Mesas, sillas y mantelería para grupos pequeños o grandes.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <i class="bi bi-speaker service-icon"></i>
+            <h4 class="card-title">Audio</h4>
+            <p class="card-text fg-3">Parlantes y micrófonos para música, discursos y presentaciones.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <i class="bi bi-lightbulb service-icon"></i>
+            <h4 class="card-title">Luces y efectos</h4>
+            <p class="card-text fg-3">Iluminación de ambiente y máquina de humo para la pista.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <i class="bi bi-balloon service-icon"></i>
+            <h4 class="card-title">Decoración</h4>
+            <p class="card-text fg-3">Centros de mesa, arcos de globos y telas decorativas.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <i class="bi bi-truck service-icon"></i>
+            <h4 class="card-title">Transporte</h4>
+            <p class="card-text fg-3">Llevamos el equipo, lo armamos y lo recogemos al final.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -60,8 +160,51 @@
     <!-- =========================================================
          CONTACTO · Responsable: Yosimar 
          ========================================================= -->
-    <section id="contacto" class="py-5 bg-light">
-      <!-- Aquí van los botones de WhatsApp, llamar, correo y redes -->
+    <section id="contacto" class="py-12 text-center">
+      <span class="text-uppercase title-section">Contacto</span>
+      <h2 class="fs-4xl fw-bold mb-0">Cotice su evento hoy</h2>
+
+      <p id="contact-texto" class="fs-lg fg-3 mb-0">
+        Escríbanos o llámenos y le respondemos con una propuesta a la medida.
+      </p>
+
+      <div class="container" id="container-contacts">
+        <a class="card text-decoration-none" href="https://wa.me/50688888888" target="_blank">
+          <div class="card-body">
+            <i class="bi bi-whatsapp contact-icon icon-whatsapp"></i>
+            <h4 class="card-title">WhatsApp</h4>
+            <p class="card-text fg-3">8888-8888</p>
+          </div>
+        </a>
+        <a class="card text-decoration-none" href="tel:+50688888888">
+          <div class="card-body">
+            <i class="bi bi-telephone contact-icon"></i>
+            <h4 class="card-title">Llamar</h4>
+            <p class="card-text fg-3">8888-8888</p>
+          </div>
+        </a>
+        <a class="card text-decoration-none" href="mailto:info@negocio.cr">
+          <div class="card-body">
+            <i class="bi bi-envelope contact-icon"></i>
+            <h4 class="card-title">Correo</h4>
+            <p class="card-text fg-3">info@negocio.cr</p>
+          </div>
+        </a>
+        <a class="card text-decoration-none" href="https://www.facebook.com/" target="_blank">
+          <div class="card-body">
+            <i class="bi bi-facebook contact-icon icon-facebook"></i>
+            <h4 class="card-title">Facebook</h4>
+            <p class="card-text fg-3">/NombreDelNegocio</p>
+          </div>
+        </a>
+        <a class="card text-decoration-none" href="https://www.instagram.com/" target="_blank">
+          <div class="card-body">
+            <i class="bi bi-instagram contact-icon icon-instagram"></i>
+            <h4 class="card-title">Instagram</h4>
+            <p class="card-text fg-3">@nombredelnegocio</p>
+          </div>
+        </a>
+      </div>
     </section>
 
   </main>
@@ -70,14 +213,49 @@
   <!-- =========================================================
        FOOTER + BOTÓN FLOTANTE · Responsable: Yosimar 
        ========================================================= -->
-  <footer>
-    <!-- Aquí va el pie de página -->
+  <footer class="footer">
+    <div id="title-footer">
+      <span>Nombre del negocio </span>
+      <span>Renta de mobiliario, sonido, luces y decoración para eventos en Guápiles y alrededores.</span>
+    </div>
+    <div id="info-footer">
+      <div class="container-info-footer">
+        <span class="title-info-footer">Enlaces</span>
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#service">Servicios</a>
+          <a href="#paquetes">Paquetes</a>
+          <a href="#ventajas">Ventajas</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+      <div class="container-info-footer">
+        <span class="title-info-footer">Contacto</span>
+        <div class="footer-contact">
+          <span>WhatsApp: 8888-8888</span>
+          <span>info@negocio.cr</span>
+          <span>Guápiles, Pococí, Limón</span>
+        </div>
+      </div>
+      <div class="container-info-footer">
+        <span class="title-info-footer">Redes</span>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/50688888888" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
   </footer>
 
   <!-- Botón flotante de WhatsApp (opcional) -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
