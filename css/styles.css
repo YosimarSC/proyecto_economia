@@ -523,6 +523,8 @@ html:hover {
   scrollbar-color: rgba(0, 0, 0, 0.45) transparent;
 }
 
+/*----------- Cambio de tema -------------*/
+
 :root {
   --ev-bg-seccion: #F6F3FB;
   --ev-titulo: #1E1B2E;
