@@ -23,7 +23,10 @@
        ========================================================= -->
   <nav class="navbar sm:navbar-expand bg-1 fg-2">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#inicio">Nombre del negocio</a>
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img src="img/logo.png" alt="Logo de Eventico" class="logo">
+        <span>EVENTICO</span>
+      </a>
       <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" aria-hidden="true"></span>
@@ -65,15 +68,14 @@
         <i class="bi bi-geo-alt-fill me-1"></i>
         Guápiles · Pococí · Limón
       </span>
-      <span class="h1 pt-5">
-        Todo para su evento,
+      <h1 class="hero-titulo">
+        Todo para su evento,<br>
         con un solo proveedor
-      </span>
-      <span class="h5 pt-5 pb-5">
+      </h1>
+      <p class="hero-texto">
         Mobiliario, sonido, luces, decoración y transporte en un mismo lugar. Usted celebra; nosotros llevamos, montamos
         y recogemos todo.
-
-      </span>
+      </p>
       <div class="buttons pt-5">
         <a href="https://wa.me/50688888888" target="_blank" class="btn-outline theme-success">
           Contactar por WhatsApp
@@ -84,7 +86,6 @@
       </div>
     </div>
   </header>
-
 
 
   <main>
@@ -140,22 +141,171 @@
       </div>
     </section>
 
+    <br>
 
     <!-- =========================================================
          PAQUETES · Responsable: Melanie
          ========================================================= -->
-    <section id="paquetes" class="py-5 bg-light">
-      <!-- Aquí van los combos (Cumpleaños, 15 Años, Boda, Empresarial) -->
+    <section id="paquetes" class="py-12 text-center">
+      <span class="text-uppercase title-section">Paquetes</span>
+
+      <h2 class="fs-4xl fw-bold mb-0">Combos para cada ocasión</h2>
+
+      <p id="service-paquetes" class="fs-lg fg-3 mb-0">
+        Precios de paquete que incluyen transporte y montaje. Consúltenos y le armamos la cotización.
+      </p>
+
+      <div class="container" id="container-paquetes">
+
+        <!-- Combo Cumpleaños -->
+        <div class="card paquete">
+          <div class="card-body">
+            <span class="paquete-badge">Familias</span>
+            <h4 class="card-title">Combo Cumpleaños</h4>
+            <p class="paquete-desc">Ideal para fiestas familiares e infantiles.</p>
+            <span class="paquete-precio-label">Precio</span>
+            <span class="paquete-precio">Por definir</span>
+            <ul class="paquete-lista">
+              <li><i class="bi bi-check2"></i> Mesas y sillas</li>
+              <li><i class="bi bi-check2"></i> Mantelería</li>
+              <li><i class="bi bi-check2"></i> Parlante con micrófono</li>
+              <li><i class="bi bi-check2"></i> Arco de globos</li>
+              <li><i class="bi bi-check2"></i> Transporte y montaje</li>
+            </ul>
+            <a class="btn-paquete"
+              href="https://wa.me/50688888888?text=Hola%2C%20me%20interesa%20el%20Combo%20Cumplea%C3%B1os"
+              target="_blank">Consultar por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Combo Graduación (destacado) -->
+        <div class="card paquete paquete-destacado">
+          <div class="card-body">
+            <span class="paquete-badge">★ Destacado</span>
+            <h4 class="card-title">Combo Graduación</h4>
+            <p class="paquete-desc">El paquete completo para una noche especial.</p>
+            <span class="paquete-precio-label">Precio</span>
+            <span class="paquete-precio">Por definir</span>
+            <ul class="paquete-lista">
+              <li><i class="bi bi-check2"></i> Mesas, sillas y mantelería</li>
+              <li><i class="bi bi-check2"></i> Audio con micrófonos</li>
+              <li><i class="bi bi-check2"></i> Luces y máquina de humo</li>
+              <li><i class="bi bi-check2"></i> Centros de mesa, arco de globos y telas</li>
+              <li><i class="bi bi-check2"></i> Transporte y montaje</li>
+            </ul>
+            <a class="btn-paquete"
+              href="https://wa.me/50688888888?text=Hola%2C%20me%20interesa%20el%20Combo%2015%20A%C3%B1os"
+              target="_blank">Consultar por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Combo Boda -->
+        <div class="card paquete">
+          <div class="card-body">
+            <span class="paquete-badge">Familias</span>
+            <h4 class="card-title">Combo Boda</h4>
+            <p class="paquete-desc">Para la ceremonia y la recepción.</p>
+            <span class="paquete-precio-label">Precio</span>
+            <span class="paquete-precio">Por definir</span>
+            <ul class="paquete-lista">
+              <li><i class="bi bi-check2"></i> Mesas, sillas y mantelería</li>
+              <li><i class="bi bi-check2"></i> Audio para ceremonia y fiesta</li>
+              <li><i class="bi bi-check2"></i> Luces de ambiente</li>
+              <li><i class="bi bi-check2"></i> Centros de mesa y telas</li>
+              <li><i class="bi bi-check2"></i> Transporte y montaje</li>
+            </ul>
+            <a class="btn-paquete" href="https://wa.me/50688888888?text=Hola%2C%20me%20interesa%20el%20Combo%20Boda"
+              target="_blank">Consultar por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Combo Empresarial -->
+        <div class="card paquete">
+          <div class="card-body">
+            <span class="paquete-badge">Empresas</span>
+            <h4 class="card-title">Combo Empresarial</h4>
+            <p class="paquete-desc">Para actividades corporativas y reuniones.</p>
+            <span class="paquete-precio-label">Precio</span>
+            <span class="paquete-precio">Por definir</span>
+            <ul class="paquete-lista">
+              <li><i class="bi bi-check2"></i> Mesas y sillas</li>
+              <li><i class="bi bi-check2"></i> Mantelería</li>
+              <li><i class="bi bi-check2"></i> Audio con micrófonos</li>
+              <li><i class="bi bi-check2"></i> Transporte y montaje</li>
+            </ul>
+            <a class="btn-paquete"
+              href="https://wa.me/50688888888?text=Hola%2C%20me%20interesa%20el%20Combo%20Empresarial"
+              target="_blank">Consultar por WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <br>
 
     <!-- =========================================================
-         VENTAJAS · Responsable: Melanie · 
+         VENTAJAS · Responsable: Melanie
          ========================================================= -->
-    <section id="ventajas" class="py-5">
-      <!-- Aquí van las 6 ventajas -->
+    <section id="ventajas" class="py-12 text-center">
+      <span class="text-uppercase title-section">¿Por qué elegirnos?</span>
+
+      <h2 class="fs-4xl fw-bold mb-0">Ventajas de trabajar con nosotros</h2>
+
+      <div class="container" id="container-ventajas">
+
+        <div class="ventaja">
+          <div class="ventaja-icono"><i class="bi bi-star"></i></div>
+          <div class="ventaja-texto">
+            <h5>Todo en un solo lugar</h5>
+            <p>Mobiliario, sonido, luces y decoración con un mismo proveedor.</p>
+          </div>
+        </div>
+
+        <div class="ventaja">
+          <div class="ventaja-icono"><i class="bi bi-clock"></i></div>
+          <div class="ventaja-texto">
+            <h5>Ahorra tiempo</h5>
+            <p>Una sola llamada para coordinar todo su evento.</p>
+          </div>
+        </div>
+
+        <div class="ventaja">
+          <div class="ventaja-icono"><i class="bi bi-gift"></i></div>
+          <div class="ventaja-texto">
+            <h5>Precios de paquete</h5>
+            <p>Los combos salen más baratos que contratar cada cosa por aparte.</p>
+          </div>
+        </div>
+
+        <div class="ventaja">
+          <div class="ventaja-icono"><i class="bi bi-truck"></i></div>
+          <div class="ventaja-texto">
+            <h5>Transporte y montaje</h5>
+            <p>Llevamos, armamos y recogemos el equipo por usted.</p>
+          </div>
+        </div>
+
+        <div class="ventaja">
+          <div class="ventaja-icono"><i class="bi bi-shield-check"></i></div>
+          <div class="ventaja-texto">
+            <h5>Menos riesgo de fallas</h5>
+            <p>Un solo equipo coordina y responde por todo el servicio.</p>
+          </div>
+        </div>
+
+        <div class="ventaja">
+          <div class="ventaja-icono"><i class="bi bi-geo-alt"></i></div>
+          <div class="ventaja-texto">
+            <h5>Servicio local</h5>
+            <p>Conocemos Guápiles y Pococí; llegamos a tiempo a su evento.</p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
+    <br>
 
     <!-- =========================================================
          CONTACTO · Responsable: Yosimar 
@@ -187,21 +337,21 @@
           <div class="card-body">
             <i class="bi bi-envelope contact-icon"></i>
             <h4 class="card-title">Correo</h4>
-            <p class="card-text fg-3">info@negocio.cr</p>
+            <p class="card-text fg-3">info@eventico.cr</p>
           </div>
         </a>
         <a class="card text-decoration-none" href="https://www.facebook.com/" target="_blank">
           <div class="card-body">
             <i class="bi bi-facebook contact-icon icon-facebook"></i>
             <h4 class="card-title">Facebook</h4>
-            <p class="card-text fg-3">/NombreDelNegocio</p>
+            <p class="card-text fg-3">/Eventico</p>
           </div>
         </a>
         <a class="card text-decoration-none" href="https://www.instagram.com/" target="_blank">
           <div class="card-body">
             <i class="bi bi-instagram contact-icon icon-instagram"></i>
             <h4 class="card-title">Instagram</h4>
-            <p class="card-text fg-3">@nombredelnegocio</p>
+            <p class="card-text fg-3">@eventico</p>
           </div>
         </a>
       </div>
@@ -215,7 +365,7 @@
        ========================================================= -->
   <footer class="footer">
     <div id="title-footer">
-      <span>Nombre del negocio </span>
+      <span>EVENTICO</span>
       <span>Renta de mobiliario, sonido, luces y decoración para eventos en Guápiles y alrededores.</span>
     </div>
     <div id="info-footer">
@@ -233,7 +383,7 @@
         <span class="title-info-footer">Contacto</span>
         <div class="footer-contact">
           <span>WhatsApp: 8888-8888</span>
-          <span>info@negocio.cr</span>
+          <span>info@eventico.cr</span>
           <span>Guápiles, Pococí, Limón</span>
         </div>
       </div>
