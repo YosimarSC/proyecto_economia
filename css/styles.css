@@ -2,6 +2,7 @@
    ESTILOS PROPIOS · Responsable: Melanie 
    ========================================================== */
 
+
 .logo {
     width: 50px;
     height: 45px;
@@ -19,8 +20,6 @@ html {
   scroll-behavior: smooth;
   /*al tocar un enlace la pagina baja suave a la seccion*/
   scroll-padding-top: 70px;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
 }
 
 body {
@@ -527,4 +526,77 @@ html {
 
 html:hover {
   scrollbar-color: rgba(0, 0, 0, 0.45) transparent;
+}
+
+/*----------- Cambio de tema -------------*/
+
+:root {
+  --ev-bg-seccion: #F6F3FB;
+  --ev-titulo: #1E1B2E;
+  --ev-texto: #6B6478;
+  --ev-lista: #3A3548;
+  --ev-linea: #E8E1F0;
+  --ev-acento: #6A1B9A;
+  --ev-acento-hover-texto: #ffffff;
+  --ev-badge-bg: #F1E6F8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ev-bg-seccion: #151224;
+    --ev-titulo: #FAFAFC;
+    --ev-texto: #A8A3B5;
+    --ev-lista: #E6E3EE;
+    --ev-linea: rgba(255, 255, 255, 0.14);
+    --ev-acento: #C58AEA;
+    --ev-acento-hover-texto: #1E1B2E;
+    --ev-badge-bg: rgba(197, 138, 234, 0.16);
+  }
+}
+
+#paquetes,
+#contacto {
+  background-color: var(--ev-bg-seccion);
+}
+
+.paquete:not(.paquete-destacado) .card-title {
+  color: var(--ev-titulo);
+}
+
+.paquete:not(.paquete-destacado) .paquete-desc,
+.paquete:not(.paquete-destacado) .paquete-precio-label {
+  color: var(--ev-texto);
+}
+ 
+.paquete:not(.paquete-destacado) .paquete-precio,
+.paquete:not(.paquete-destacado) .paquete-lista i {
+  color: var(--ev-acento);
+}
+ 
+.paquete:not(.paquete-destacado) .paquete-lista {
+  color: var(--ev-lista);
+  border-top-color: var(--ev-linea);
+}
+ 
+.paquete:not(.paquete-destacado) .paquete-badge {
+  color: var(--ev-acento);
+  background-color: var(--ev-badge-bg);
+}
+ 
+.paquete:not(.paquete-destacado) .btn-paquete {
+  color: var(--ev-acento);
+  border-color: var(--ev-acento);
+}
+ 
+.paquete:not(.paquete-destacado) .btn-paquete:hover {
+  background-color: var(--ev-acento);
+  color: var(--ev-acento-hover-texto);
+}
+
+.ventaja-texto h5 {
+  color: var(--ev-titulo);
+}
+ 
+.ventaja-texto p {
+  color: var(--ev-texto);
 }
