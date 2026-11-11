@@ -379,6 +379,70 @@ h5,
 }
 
 
+/* ---------- Precios por servicio ---------- */
+#precios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#precios-texto {
+  max-width: 680px;
+}
+
+#container-precios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 36px;
+  max-width: 1200px;
+}
+
+#container-precios .card {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 240px;
+}
+
+.precio {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #6A1B9A;
+}
+
+.precio-unidad {
+  font-size: 0.85rem;
+  color: #6B6478;
+}
+
+#precio-ejemplo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+  padding: 20px 32px;
+  border-radius: 16px;
+  background-color: #F1E6F8;
+}
+
+#otros-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 680px;
+  margin-top: 24px;
+  padding: 28px 32px;
+  border: 2px dashed #E8E1F0;
+  border-radius: 16px;
+}
+
+
 /* ---------- Contacto y footer ---------- */
 #contacto {
   display: flex;
@@ -527,4 +591,77 @@ html {
 
 html:hover {
   scrollbar-color: rgba(0, 0, 0, 0.45) transparent;
+}
+
+/*----------- Cambio de tema -------------*/
+
+:root {
+  --ev-bg-seccion: #F6F3FB;
+  --ev-titulo: #1E1B2E;
+  --ev-texto: #6B6478;
+  --ev-lista: #3A3548;
+  --ev-linea: #E8E1F0;
+  --ev-acento: #6A1B9A;
+  --ev-acento-hover-texto: #ffffff;
+  --ev-badge-bg: #F1E6F8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ev-bg-seccion: #151224;
+    --ev-titulo: #FAFAFC;
+    --ev-texto: #A8A3B5;
+    --ev-lista: #E6E3EE;
+    --ev-linea: rgba(255, 255, 255, 0.14);
+    --ev-acento: #C58AEA;
+    --ev-acento-hover-texto: #1E1B2E;
+    --ev-badge-bg: rgba(197, 138, 234, 0.16);
+  }
+}
+
+#paquetes,
+#contacto {
+  background-color: var(--ev-bg-seccion);
+}
+
+.paquete:not(.paquete-destacado) .card-title {
+  color: var(--ev-titulo);
+}
+
+.paquete:not(.paquete-destacado) .paquete-desc,
+.paquete:not(.paquete-destacado) .paquete-precio-label {
+  color: var(--ev-texto);
+}
+ 
+.paquete:not(.paquete-destacado) .paquete-precio,
+.paquete:not(.paquete-destacado) .paquete-lista i {
+  color: var(--ev-acento);
+}
+ 
+.paquete:not(.paquete-destacado) .paquete-lista {
+  color: var(--ev-lista);
+  border-top-color: var(--ev-linea);
+}
+ 
+.paquete:not(.paquete-destacado) .paquete-badge {
+  color: var(--ev-acento);
+  background-color: var(--ev-badge-bg);
+}
+ 
+.paquete:not(.paquete-destacado) .btn-paquete {
+  color: var(--ev-acento);
+  border-color: var(--ev-acento);
+}
+ 
+.paquete:not(.paquete-destacado) .btn-paquete:hover {
+  background-color: var(--ev-acento);
+  color: var(--ev-acento-hover-texto);
+}
+
+.ventaja-texto h5 {
+  color: var(--ev-titulo);
+}
+ 
+.ventaja-texto p {
+  color: var(--ev-texto);
 }
