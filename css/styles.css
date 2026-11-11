@@ -10,6 +10,11 @@
 }
 
 /* ---------- General ---------- */
+:root {
+  color-scheme: light;
+  /* la página siempre en modo claro, aunque el navegador esté en modo oscuro */
+}
+
 html {
   scroll-behavior: smooth;
   /*al tocar un enlace la pagina baja suave a la seccion*/
