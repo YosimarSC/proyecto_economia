@@ -10,10 +10,7 @@
 }
 
 /* ---------- General ---------- */
-:root {
-  color-scheme: light;
-  /* la página siempre en modo claro, aunque el navegador esté en modo oscuro */
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -428,6 +425,11 @@ h5,
   padding: 20px 32px;
   border-radius: 16px;
   background-color: #F1E6F8;
+  color: #1E1B2E;
+}
+
+#precio-ejemplo .fg-3 {
+  color: #6B6478;
 }
 
 #otros-servicios {
@@ -632,27 +634,27 @@ html:hover {
 .paquete:not(.paquete-destacado) .paquete-precio-label {
   color: var(--ev-texto);
 }
- 
+
 .paquete:not(.paquete-destacado) .paquete-precio,
 .paquete:not(.paquete-destacado) .paquete-lista i {
   color: var(--ev-acento);
 }
- 
+
 .paquete:not(.paquete-destacado) .paquete-lista {
   color: var(--ev-lista);
   border-top-color: var(--ev-linea);
 }
- 
+
 .paquete:not(.paquete-destacado) .paquete-badge {
   color: var(--ev-acento);
   background-color: var(--ev-badge-bg);
 }
- 
+
 .paquete:not(.paquete-destacado) .btn-paquete {
   color: var(--ev-acento);
   border-color: var(--ev-acento);
 }
- 
+
 .paquete:not(.paquete-destacado) .btn-paquete:hover {
   background-color: var(--ev-acento);
   color: var(--ev-acento-hover-texto);
@@ -661,7 +663,7 @@ html:hover {
 .ventaja-texto h5 {
   color: var(--ev-titulo);
 }
- 
+
 .ventaja-texto p {
   color: var(--ev-texto);
 }
